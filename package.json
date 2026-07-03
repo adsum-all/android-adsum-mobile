@@ -1,0 +1,24 @@
+{
+  "name": "adsum-mobile",
+  "version": "0.1.0",
+  "private": true,
+  "description": "ADSUM member Android/iOS shell (Capacitor) wrapping the web member application.",
+  "type": "module",
+  "scripts": {
+    "prepare:web": "node scripts/prepare-web.mjs",
+    "add:android": "cap add android",
+    "sync": "cap sync",
+    "open:android": "cap open android",
+    "run:android": "cap run android",
+    "build:apk": "cd android && ./gradlew assembleDebug"
+  },
+  "dependencies": {
+    "@capacitor/android": "^6.1.2",
+    "@capacitor/app": "^6.0.2",
+    "@capacitor/core": "^6.1.2",
+    "@capacitor/status-bar": "^6.0.2"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^6.1.2"
+  }
+}

@@ -9,6 +9,10 @@ build/
 .vite/
 .turbo/
 out/
+# Capacitor web payload, copied from adsum-web-membre by npm run prepare:web
+www/
+*.apk
+*.aab
 
 # Native (Capacitor)
 android/app/build/
